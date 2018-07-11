@@ -20,7 +20,7 @@
         </dependency>
         
     </dependencies>
-    <build>
+    <build> 
 		<plugins>
 			<!-- Set a compiler level -->
 			<plugin>
