@@ -23,18 +23,42 @@ REPORT
 -	REPORT will announce the X,Y and F of the robot. 
 
 -	Example Input and Output:
-o	PLACE 0,0,NORTH
-o	MOVE
-o	REPORT
-	Output: 0,1,NORTH
-o	PLACE 0,0,NORTH
-o	LEFT
-o	REPORT
-	Output: 0,0,WEST
-o	PLACE 1,2,EAST
-o	MOVE
-o	MOVE
-o	LEFT
-o	MOVE
-o	REPORT
-	Output: 3,3,NORTH
+a)
+
+PLACE 0,0,NORTH
+MOVE
+REPORT
+
+Output: 0,1,NORTH
+b)
+
+PLACE 0,0,NORTH
+LEFT
+REPORT
+
+Output: 0,0,WEST
+c)
+
+PLACE 1,2,EAST
+MOVE
+MOVE
+LEFT
+MOVE
+REPORT
+
+Output: 3,3,NORTH
+Requirements
+Implemented and tested using Java 8
+
+Tests require JUnit and Mockito
+
+Project dependencies and compiling managed by Maven
+
+Compile, Test, Run and Packaging
+Compile: mvn compile
+
+Test: mvn test
+
+Run: mvn exec:java
+
+Packaging: mvn package, compiled jar in target/ folder
